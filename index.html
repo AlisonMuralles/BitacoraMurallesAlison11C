@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitácora Alison Muralles</title>
+    <link rel="icon" type="image/png" href="Recursos/LogoA.png">
+    <style>
+        html, body{
+            height: 100%;
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f4f7f6;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        header{
+            padding: 30px;
+            background-color: #000661b2;
+        }
+
+        h1 {
+            color: #ffffff;
+            text-shadow: 0 0 7px #fff, 0 0 15px #bf00ff, 0 0 25px #ea2bff;
+            margin: 0;
+        }
+
+        main{
+            flex: 1;
+            padding: 20px;
+            max-width: 900px; /* Un poco más ancho para acomodar la imagen */
+            margin: 0 auto;
+        }
+
+        .semana {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 25px;
+            border-left: 6px solid #3f64f7;
+            text-align: left;
+        }
+
+        /* --- NUEVO: Estilo para poner imagen a la par del texto --- */
+        .contenido-flex {
+            display: flex;
+            align-items: center;
+            gap: 20px; /* Espacio entre texto e imagen */
+            flex-wrap: wrap; /* Para que en móviles se ponga uno abajo del otro */
+        }
+
+        .texto-semana {
+            flex: 1; /* Toma el espacio disponible */
+            min-width: 250px;
+        }
+
+        .imagen-semana {
+            width: 200px; /* Ajusta el tamaño según prefieras */
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        .pdf-container {
+            margin-top: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            border-top: 1px solid #0611b3b2;
+            background-color: #0000ff;
+            color: white;
+        }
+
+        footer img {
+            transition: transform 0.3s ease;
+        }
+        footer img:hover {
+            transform: scale(1.15);
+        }
+
+        @media(max-width:600px){
+            footer{
+                flex-direction: column;
+                gap: 15px;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+    <header>
+        <h1>Bitácora tercera y segunda unidad</h1>
+    </header>
+
+    <main>
+        <h3>Contenido de la página WEB</h3>
+
+        <div class="semana">
+            <div class="contenido-flex">
+                <div class="texto-semana">
+                    <h4>Semana 1: Introducción a Arduino</h4>
+                    <p>En esta semana aprendimos de la plataforma Arduino, sus componentes principales y la diferencia entre señales analógicas y digitales.</p>
+                </div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkl5vlI1YNpzJLqlx87NfZ_p-6M2f-KSrj5w&s" alt="Placa Arduino" class="imagen-semana">
+            </div>
+            
+            <div class="pdf-container">
+                <embed src="Recursos/Introducción Arduino Alison Muralles (1).pdf" type="application/pdf" width="100%" height="400px" />
+            </div>
+            <p style="text-align: center; margin-top: 10px;">
+                <a href="Recursos/Introducción Arduino Alison Muralles (1).pdf" target="_blank" style="color: #3f64f7; text-decoration: none; font-weight: bold;">
+                    📂 Abrir PDF en pantalla completa
+                </a>
+            </p>
+        </div>
+
+        <div class="semana">
+            <h4>Semana 2: Introducción a CSS</h4>
+            <p>Aprendimos a hacer un circuito de luces LED y a programarlo con ayuda de un arduino.</p>
+            <img src="Recursos/ImagenArduino.png" alt="Placa Arduino" class="imagen-semana">
+            <video width="100%" controls style="border-radius: 8px; margin-top: 10px;">
+            <source src="Recursos/VideoAlisonCap.mp4" type="video/mp4">
+    
+</video>
+        </div>
+
+        <div class="semana">
+            <h4>Semana 3: Estructuras Flexbox</h4>
+            <p>Aprendimos a organizar elementos usando display: flex y cómo alinear el contenido.</p>
+        </div>
+    </main>
+
+    <footer>  
+        <span>@zmsvale</span>
+        <img src="https://www.capouilliez.edu.gt/assets/img/logo.png" height="75" width="300" alt="Logo Colegio">
+    </footer>
+</body>
+</html>
